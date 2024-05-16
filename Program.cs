@@ -55,3 +55,11 @@ else
 Console.WriteLine("********************* Complex IF.. ELSE.. IF Results End *********************");
 
 Console.WriteLine("Thank you for using this program.");
+
+/* Ternary Operator used to assign a value to a variable based on a condition */
+Console.WriteLine("********************* Ternary Operator Result *********************");
+
+string passStatus = grade < 50 ? "Fail" : "PASS";
+Console.WriteLine($"Student Status is {passStatus}");
+
+Console.WriteLine("********************* Ternary Operator Result End *********************");
