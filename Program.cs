@@ -63,3 +63,43 @@ string passStatus = grade < 50 ? "Fail" : "PASS";
 Console.WriteLine($"Student Status is {passStatus}");
 
 Console.WriteLine("********************* Ternary Operator Result End *********************");
+
+
+/* Write a program to accept an integer as the day of the week and print the appropriate message as outlined below.
+ * 1. Sunday
+ * 2. Monday
+ * 3. Tuesday
+ * 4. Wednesday (Hump Day!)
+ * 5. Thursday
+ * 6. Friday (TGIF!!!)
+ * 7. Saturday (Beach Day!!!)
+ */
+Console.WriteLine("Please Enter A number for a Day of the week: ");
+
+int dayOfWeek = Convert.ToInt32(Console.ReadLine());
+switch (dayOfWeek)
+{
+    case 1:
+        Console.WriteLine("Sunday");
+        break;
+    case 2:
+        Console.WriteLine("Monday");
+        break;
+    case 3:
+        Console.WriteLine("Tuesday");
+        break;
+    case 4:
+        Console.WriteLine("Wednesday");
+        break;
+    case 5:
+        Console.WriteLine("Thursday");
+        break;
+    case 6:
+        Console.WriteLine("Friday");
+        break;
+    case 7:
+        Console.WriteLine("Saturday");
+        break;
+}
+
+Console.WriteLine("********************* Switch Operator Result End *********************");
