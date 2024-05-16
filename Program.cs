@@ -2,6 +2,7 @@
 
 // Prompt for input
 Console.Write("Please Enter Student's Grade: ");
+// Global variable / Global scope
 int grade = Convert.ToInt32(Console.ReadLine());
 
 // Simple If... Else... Statement - Decide to print pass or fail based on input
@@ -28,6 +29,7 @@ Console.WriteLine("********************* Complex IF.. ELSE.. IF Results ********
  * D: 50-64
  * F: Less than 50
  */
+
 if(grade < 0 || grade > 100)
 {
     Console.WriteLine("Invalid Value Entered.");
@@ -48,10 +50,11 @@ else if (grade >= 75 && grade <= 84)
 {
     Console.WriteLine("B");
 }
-else 
+else if(grade >=85 && grade <= 100) 
 {
     Console.WriteLine("A - Good Job");
 }
+int gradeAfterBonus = grade >= 0 && grade <= 100 ? grade +10 : 0;
 Console.WriteLine("********************* Complex IF.. ELSE.. IF Results End *********************");
 
 Console.WriteLine("Thank you for using this program.");
